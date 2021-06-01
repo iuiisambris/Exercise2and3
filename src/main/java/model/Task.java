@@ -1,37 +1,39 @@
 package model;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.util.UUID;
 
 @Entity
 @Table(name = "TASKS")
 public class Task {
-    private long id;
+    private String id;
     private String title;
     private String description;
 
     public Task() {
-
+        this.id = UUID.randomUUID().toString();
     }
 
     public Task(String title, String description) {
-        this.id = 0;
+        this.id = UUID.randomUUID().toString();
         this.title = title;
         this.description = description;
     }
 
-    public Task(long id, String title, String description) {
+    public Task(String id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -21,17 +21,17 @@ class DBRepositoryTest {
         tasks = new ArrayList<Task>();
         assignments =new ArrayList<Assignment>();
 
-        var u1 = new User(0, "FirstName1", "LastName1", "UserName1");
-        var u2 = new User(0, "FirstName2", "LastName2", "UserName2");
-        var u3 = new User(0, "FirstName3", "LastName3", "UserName3");
+        var u1 = new User("FirstName1", "LastName1", "UserName1");
+        var u2 = new User("FirstName2", "LastName2", "UserName2");
+        var u3 = new User("FirstName3", "LastName3", "UserName3");
 
         users.add(u1);
         users.add(u2);
         users.add(u3);
 
-        var t1 = new Task(0, "TaskTitle1", "TaskDescription1");
-        var t2 = new Task(0, "TaskTitle2", "TaskDescription2");
-        var t3 = new Task(0, "TaskTitle3", "TaskDescription3");
+        var t1 = new Task("TaskTitle1", "TaskDescription1");
+        var t2 = new Task( "TaskTitle2", "TaskDescription2");
+        var t3 = new Task( "TaskTitle3", "TaskDescription3");
 
         tasks.add(t1);
         tasks.add(t2);
@@ -61,7 +61,7 @@ class DBRepositoryTest {
 
         userRepo.add(user);
 
-        Assertions.assertTrue(user.getId() != 0);
+        //TODO
 
         userRepo.closeConnections();
     }

@@ -2,7 +2,6 @@ package repository.specifications;
 
 import model.User;
 
-import java.util.Map;
 
 public class UserFindByUsername extends SpecificationBase<User> {
 

@@ -1,11 +1,15 @@
 package model;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import java.util.UUID;
 
 @Entity
 @Table(name = "USERS")
 public class User {
-    private long id;
+    private String id;
     private String firstName;
     private String lastName;
 
@@ -13,10 +17,10 @@ public class User {
     private String userName;
 
     public User() {
-
+        this.id = UUID.randomUUID().toString();
     }
 
-    public User(long id, String firstName, String lastName, String userName) {
+    public User(String id, String firstName, String lastName, String userName) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -24,19 +28,18 @@ public class User {
     }
 
     public User(String firstName, String lastName, String userName) {
-        this.id = 0;
+        this.id = UUID.randomUUID().toString();
         this.firstName = firstName;
         this.lastName = lastName;
         this.userName = userName;
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id){
+    public void setId(String id){
         this.id= id;
     }
 

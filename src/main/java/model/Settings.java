@@ -1,7 +1,5 @@
 package model;
 
-import repository.RepositoryType;
-
 public class Settings {
     private String key;
     private String value;

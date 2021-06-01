@@ -1,26 +1,16 @@
 [ {
-  "id" : 1,
-  "firstName" : "FirstName1",
-  "lastName" : "LastName1",
-  "userName" : "UserName1"
-}, {
-  "id" : 2,
-  "firstName" : "FirstName2",
-  "lastName" : "LastName2",
-  "userName" : "UserName2"
-}, {
-  "id" : 3,
-  "firstName" : "FirstName3",
-  "lastName" : "LastName3",
-  "userName" : "UserName3"
-}, {
-  "id" : 4,
-  "firstName" : "FirstName4",
-  "lastName" : "LastName4",
-  "userName" : "UserName4"
-}, {
-  "id" : 0,
+  "id" : "a4d5c7ba-484f-4003-9c1e-96ad11c6dcd2",
   "firstName" : "FirstName",
   "lastName" : "LastName",
   "userName" : "LastName"
+}, {
+  "id" : "b49c0afb-93f7-44e5-bc23-133469cc5a0d",
+  "firstName" : "FirstName",
+  "lastName" : "LastName",
+  "userName" : "UserName"
+}, {
+  "id" : "52a1583e-5eda-4620-a372-f00570023282",
+  "firstName" : "Jora",
+  "lastName" : "Kernel",
+  "userName" : "jkernel"
 } ]
